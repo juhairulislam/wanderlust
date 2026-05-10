@@ -3,6 +3,16 @@ import { FieldError, Input, Label, TextField , Select, ListBox, TextArea, Button
 import React from 'react';
 
 const AddDestinationPage = () => {
+
+    const onSubmit = (e) =>{
+        e.preventDefault() ;
+
+        const formData= new FormData(e.currentTarget) 
+        const destination = Object.fromEntries(formData.entries()) ;
+
+        console.log(destination)
+    }
+
     return (
         <div className='p-5 max-w-7xl mx-auto'>
             <h1 className='text-3xl font-bold text-center'>Add destination </h1>
@@ -10,6 +20,7 @@ const AddDestinationPage = () => {
             <Card>
 
             <form
+            onSubmit={onSubmit}
             className="p-10 space-y-8 w-3xl"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
