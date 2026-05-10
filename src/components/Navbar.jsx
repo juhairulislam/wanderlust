@@ -4,9 +4,9 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <nav>
+        <nav className='flex justify-between items-center p-6 shadow'>
 
-            <ul>
+            <ul className='flex justify-between items-center gap-4'>
                 <li><Link href={'/'}>Home</Link></li>
                 <li><Link href={'/destinations'}>Destinations</Link></li>
                 <li><Link href={'/my-bookings'}>My Bookings</Link></li>
@@ -16,13 +16,13 @@ const Navbar = () => {
                 <Image
                 alt='Nav Logo'
                 src={'/assets/Wanderlast.png'}
-                width={100}
-                height={100}
+                width={150}
+                height={150}
                 ></Image>
             </div>
 
 
-             <ul>
+             <ul className='flex justify-between items-center gap-4'>
                 <li><Link href={'/profile'}>Profile</Link></li>
                 <li><Link href={'/login'}>Login</Link></li>
                 <li><Link href={'/signup'}>Sign Up</Link></li>
