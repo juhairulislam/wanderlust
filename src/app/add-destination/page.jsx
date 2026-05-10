@@ -1,11 +1,13 @@
-import { FieldError, Input, Label, TextField , Select, ListBox, TextArea, Button } from '@heroui/react';
+'use client'
+import { FieldError, Input, Label, TextField , Select, ListBox, TextArea, Button, Card } from '@heroui/react';
 import React from 'react';
 
 const AddDestinationPage = () => {
     return (
-        <div>
-            <h1>Add destination page re bhai</h1>
+        <div className='p-5'>
+            <h1 className='text-3xl font-bold text-center'>Add destination </h1>
 
+            <Card>
 
             <form
             className="p-10 space-y-8"
@@ -136,6 +138,10 @@ const AddDestinationPage = () => {
             >
 Add Destination            </Button>
           </form>
+
+            </Card>
+
+
         </div>
     );
 };
