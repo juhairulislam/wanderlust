@@ -1,6 +1,8 @@
+import { Button } from '@heroui/react';
 import Image from 'next/image';
 import React from 'react';
 import { FaRegCalendarAlt, FaStarHalfAlt } from 'react-icons/fa';
+import { GoArrowUpRight } from 'react-icons/go';
 import { LuMapPin } from 'react-icons/lu';
 
 const DestinationCard = ({ d }) => {
@@ -49,6 +51,9 @@ const DestinationCard = ({ d }) => {
             <span className="text-xs text-neutral-400 ml-1">/ person</span>
           </div>
         </div>
+
+        <Button variant='ghost' className='mt-2 text-cyan-500'>Book Now<GoArrowUpRight />
+</Button>
 
       </div>
     </div>
