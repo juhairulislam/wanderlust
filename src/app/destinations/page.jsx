@@ -13,7 +13,7 @@ const DestinationPage =async () => {
             <h1 className='text-center font-extrabold text-4xl text-cyan-500 my-8'>All Destinations</h1>
 
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-4'>
 
                 {
                     destinations.map(d => <div key={d._id}>
