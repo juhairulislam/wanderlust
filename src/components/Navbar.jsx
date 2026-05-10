@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { CgProfile } from 'react-icons/cg';
 
 const Navbar = () => {
     return (
@@ -23,7 +24,8 @@ const Navbar = () => {
 
 
              <ul className='flex justify-between items-center gap-4'>
-                <li><Link href={'/profile'}>Profile</Link></li>
+                <li><Link className='flex items-center gap-2' href={'/profile'}><CgProfile />
+ Profile</Link></li>
                 <li><Link href={'/login'}>Login</Link></li>
                 <li><Link href={'/signup'}>Sign Up</Link></li>
             </ul>
