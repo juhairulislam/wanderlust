@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -10,6 +11,15 @@ const Navbar = () => {
                 <li><Link href={'/destinations'}>Destinations</Link></li>
                 <li><Link href={'/my-bookings'}>My Bookings</Link></li>
             </ul>
+
+            <div>
+                <Image
+                alt='Nav Image'
+                src={'/assets/Wanderlast.png'}
+                width={100}
+                height={100}
+                ></Image>
+            </div>
             
         </nav>
     );
