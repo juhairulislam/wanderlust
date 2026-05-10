@@ -1,3 +1,4 @@
+import DestinationCard from '@/components/DestinationCard';
 import React from 'react';
 
 const DestinationPage =async () => {
@@ -16,7 +17,7 @@ const DestinationPage =async () => {
 
                 {
                     destinations.map(d => <div key={d._id}>
-                        {d.destinationName}
+                       <DestinationCard d={d}></DestinationCard>
                     </div>)
                 }
 
