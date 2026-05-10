@@ -2,6 +2,8 @@ import Image from 'next/image';
 import React from 'react';
 import { FiMapPin, FiClock, FiCalendar, FiTag, FiArrowLeft, FiStar } from 'react-icons/fi';
 import Link from 'next/link';
+import { Button } from '@heroui/react';
+import { FaRegEdit } from 'react-icons/fa';
 
 const DetailsPage = async ({ params }) => {
   const { id } = await params;
@@ -32,6 +34,10 @@ const DetailsPage = async ({ params }) => {
 
       
 
+              <div className='flex justify-end my-6 '>
+            <Button className='text-cyan-600' variant='outline'><FaRegEdit />
+ Edit</Button>
+        </div>
       {/* ── Hero ── */}
       <div className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
         <Image
