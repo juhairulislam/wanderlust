@@ -12,6 +12,8 @@ const DestinationCard = ({ d }) => {
     return (
         <div className="group w-[280px] rounded-2xl overflow-hidden border border-neutral-200 bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
 
+            
+
             {/* Image with rating badge */}
             <div className="relative w-full h-[200px] overflow-hidden">
                 <Image

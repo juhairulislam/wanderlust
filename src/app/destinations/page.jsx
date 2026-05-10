@@ -1,5 +1,7 @@
 import DestinationCard from '@/components/DestinationCard';
+import { Button } from '@heroui/react';
 import React from 'react';
+import { FaRegEdit } from 'react-icons/fa';
 
 const DestinationPage =async () => {
 
@@ -9,11 +11,17 @@ const DestinationPage =async () => {
     // console.log(destinations)
 
     return (
-        <div>
+        <div className='p-10'>
             <h1 className='text-center font-extrabold text-4xl text-cyan-500 my-8'>All Destinations</h1>
 
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-10 gap-4'>
+              <div className='flex justify-end my-4 '>
+            <Button className='text-cyan-600' variant='outline'><FaRegEdit />
+ Edit</Button>
+        </div>
+
+
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4  gap-4 mx-auto'>
 
                 {
                     destinations.map(d => <div key={d._id}>
