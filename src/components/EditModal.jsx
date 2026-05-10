@@ -1,7 +1,7 @@
 "use client";
 
 import {Envelope} from "@gravity-ui/icons";
-import {Button, FieldError, Input, Label, Modal, Surface, TextField , Select, ListBox} from "@heroui/react";
+import {Button, TextArea,  FieldError, Input, Label, Modal, Surface, TextField , Select, ListBox} from "@heroui/react";
 import { FaRegEdit } from "react-icons/fa";
 
 export function EditModal() {

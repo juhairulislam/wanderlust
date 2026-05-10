@@ -4,6 +4,7 @@ import { FiMapPin, FiClock, FiCalendar, FiTag, FiArrowLeft, FiStar } from 'react
 import Link from 'next/link';
 import { Button } from '@heroui/react';
 import { FaRegEdit } from 'react-icons/fa';
+import { EditModal } from '@/components/EditModal';
 
 const DetailsPage = async ({ params }) => {
   const { id } = await params;
@@ -33,11 +34,7 @@ const DetailsPage = async ({ params }) => {
     <div className="min-h-screen bg-[#faf9f6] font-sans">
 
       
-
-              <div className='flex justify-end my-6 '>
-            <Button className='text-cyan-600' variant='outline'><FaRegEdit />
- Edit</Button>
-        </div>
+<EditModal></EditModal>
       {/* ── Hero ── */}
       <div className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
         <Image
