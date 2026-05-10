@@ -14,7 +14,7 @@ const Navbar = () => {
 
             <div>
                 <Image
-                alt='Nav Image'
+                alt='Nav Logo'
                 src={'/assets/Wanderlast.png'}
                 width={100}
                 height={100}
