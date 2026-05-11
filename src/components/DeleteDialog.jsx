@@ -3,7 +3,7 @@
 import {AlertDialog, Button} from "@heroui/react";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
-export function DeleteDialog() {
+export function DeleteDialog({destination}) {
   return (
     <AlertDialog>
       <Button className='text-red-500 border border-red-500' variant="outline"><RiDeleteBin6Line />
@@ -14,11 +14,11 @@ export function DeleteDialog() {
             <AlertDialog.CloseTrigger />
             <AlertDialog.Header>
               <AlertDialog.Icon status="danger" />
-              <AlertDialog.Heading>Delete project permanently?</AlertDialog.Heading>
+              <AlertDialog.Heading>Delete destination permanently?</AlertDialog.Heading>
             </AlertDialog.Header>
             <AlertDialog.Body>
               <p>
-                This will permanently delete <strong>My Awesome Project</strong> and all of its
+                This will permanently delete <strong>{destination.destinationName}</strong> and all of its
                 data. This action cannot be undone.
               </p>
             </AlertDialog.Body>
@@ -27,7 +27,7 @@ export function DeleteDialog() {
                 Cancel
               </Button>
               <Button slot="close" variant="danger">
-                Delete Project
+                Delete
               </Button>
             </AlertDialog.Footer>
           </AlertDialog.Dialog>

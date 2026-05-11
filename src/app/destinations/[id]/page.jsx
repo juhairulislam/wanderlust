@@ -38,7 +38,7 @@ const DetailsPage = async ({ params }) => {
       <div className='flex items-center justify-end gap-2 my-4'>
 
 <EditModal destination={destination}></EditModal>
-<DeleteDialog></DeleteDialog>
+<DeleteDialog destination={destination}></DeleteDialog>
 
       </div>
 
