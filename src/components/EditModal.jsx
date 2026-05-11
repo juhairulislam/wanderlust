@@ -4,9 +4,9 @@ import { Envelope } from "@gravity-ui/icons";
 import { Button, TextArea, FieldError, Input, Label, Modal, Surface, TextField, Select, ListBox } from "@heroui/react";
 import { FaRegEdit } from "react-icons/fa";
 
-export function EditModal({destination}) {
+export function EditModal({ destination }) {
 
-    const {
+  const {
     destinationName,
     country,
     price,
@@ -50,7 +50,7 @@ export function EditModal({destination}) {
           <Modal.Dialog className="sm:max-w-md">
             <Modal.CloseTrigger />
             <Modal.Header>
-             
+
               <Modal.Heading>Edit Destination</Modal.Heading>
 
             </Modal.Header>
@@ -81,7 +81,7 @@ export function EditModal({destination}) {
                     {/* Category - Updated Select Component */}
                     <div>
                       <Select
-                      defaultValue={category}
+                        defaultValue={category}
                         name="category"
                         isRequired
                         className="w-full"
@@ -181,21 +181,16 @@ export function EditModal({destination}) {
 
                   {/* Buttons */}
 
-                  <Button
-                    type="submit"
-                    variant="outline"
-                    className=" rounded-none w-full bg-cyan-500 text-white my-3"
-                  >
-                    Add Destination            </Button>
-                </form>
-              </Surface>
-            </Modal.Body>
-            <Modal.Footer>
+             <Modal.Footer>
               <Button slot="close" variant="secondary">
                 Cancel
               </Button>
-              <Button className='bg-cyan-600 ' slot="close">Update</Button>
+              <Button type="submit" className='bg-cyan-600 my-4' slot="close">Update</Button>
             </Modal.Footer>
+                </form>
+              </Surface>
+            </Modal.Body>
+
           </Modal.Dialog>
         </Modal.Container>
       </Modal.Backdrop>
