@@ -7,6 +7,7 @@ import { FaRegEdit } from "react-icons/fa";
 export function EditModal({ destination }) {
 
   const {
+    _id,
     destinationName,
     country,
     price,
@@ -25,15 +26,15 @@ export function EditModal({ destination }) {
 
     // console.log(destination)
 
-    // const res =await fetch('http://localhost:5000/destination' ,{
-    //     method:'POST' ,
-    //     headers:{
-    //         'content-type' : 'application/json'
-    //     } ,
-    //     body: JSON.stringify(destination)
-    // })
+    const res =await fetch(`http://localhost:5000/destination/${_id}` ,{
+        method:'PATCH' ,
+        headers:{
+            'content-type' : 'application/json'
+        } ,
+        body: JSON.stringify(destination)
+    })
 
-    // const data = await res.json() 
+    const data = await res.json() 
 
     // console.log(data)
   }
