@@ -81,6 +81,7 @@ export function EditModal({destination}) {
                     {/* Category - Updated Select Component */}
                     <div>
                       <Select
+                      defaultValue={category}
                         name="category"
                         isRequired
                         className="w-full"
