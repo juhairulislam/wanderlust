@@ -135,7 +135,7 @@ export function EditModal({destination}) {
                     </TextField>
 
                     {/* Duration */}
-                    <TextField defaultValue={price} name="duration" isRequired>
+                    <TextField defaultValue={duration} name="duration" isRequired>
                       <Label>Duration</Label>
                       <Input
                         placeholder="7 Days / 6 Nights"
