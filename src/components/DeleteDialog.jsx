@@ -1,11 +1,13 @@
 "use client";
 
 import {AlertDialog, Button} from "@heroui/react";
+import { RiDeleteBin6Line } from "react-icons/ri";
 
 export function DeleteDialog() {
   return (
     <AlertDialog>
-      <Button variant="danger">Delete</Button>
+      <Button className='text-red-500 border border-red-500' variant="outline"><RiDeleteBin6Line />
+ Delete</Button>
       <AlertDialog.Backdrop>
         <AlertDialog.Container>
           <AlertDialog.Dialog className="sm:max-w-[400px]">
