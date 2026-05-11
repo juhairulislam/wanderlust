@@ -7,7 +7,6 @@ import { FaRegEdit } from "react-icons/fa";
 export function EditModal({destination}) {
 
     const {
-    _id,
     destinationName,
     country,
     price,
@@ -65,7 +64,7 @@ export function EditModal({destination}) {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Destination Name */}
                     <div className="md:col-span-2">
-                      <TextField name="destinationName" isRequired>
+                      <TextField defaultValue={destinationName} name="destinationName" isRequired>
                         <Label>Destination Name</Label>
                         <Input placeholder="Bali Paradise" className="rounded-2xl" />
                         <FieldError />
@@ -73,7 +72,7 @@ export function EditModal({destination}) {
                     </div>
 
                     {/* Country */}
-                    <TextField name="country" isRequired>
+                    <TextField defaultValue={country} name="country" isRequired>
                       <Label>Country</Label>
                       <Input placeholder="Indonesia" className="rounded-2xl" />
                       <FieldError />
@@ -124,7 +123,7 @@ export function EditModal({destination}) {
                     </div>
 
                     {/* Price */}
-                    <TextField name="price" type="number" isRequired>
+                    <TextField defaultValue={price} name="price" type="number" isRequired>
                       <Label>Price (USD)</Label>
                       <Input
                         type="number"
@@ -135,7 +134,7 @@ export function EditModal({destination}) {
                     </TextField>
 
                     {/* Duration */}
-                    <TextField name="duration" isRequired>
+                    <TextField defaultValue={price} name="duration" isRequired>
                       <Label>Duration</Label>
                       <Input
                         placeholder="7 Days / 6 Nights"
@@ -146,7 +145,7 @@ export function EditModal({destination}) {
 
                     {/* Departure Date */}
                     <div className="md:col-span-2">
-                      <TextField name="departureDate" type="date" isRequired>
+                      <TextField defaultValue={departureDate} name="departureDate" type="date" isRequired>
                         <Label>Departure Date</Label>
                         <Input type="date" className="rounded-2xl" />
                         <FieldError />
@@ -155,7 +154,7 @@ export function EditModal({destination}) {
 
                     {/* Image URL - Removed preview */}
                     <div className="md:col-span-2">
-                      <TextField name="imageUrl" isRequired>
+                      <TextField defaultValue={imageUrl} name="imageUrl" isRequired>
                         <Label>Image URL</Label>
                         <Input
                           type="url"
@@ -168,7 +167,7 @@ export function EditModal({destination}) {
 
                     {/* Description */}
                     <div className="md:col-span-2">
-                      <TextField name="description" isRequired>
+                      <TextField defaultValue={description} name="description" isRequired>
                         <Label>Description</Label>
                         <TextArea
                           placeholder="Describe the travel experience..."
