@@ -43,10 +43,9 @@ export function EditModal({ destination }) {
   return (
     <Modal>
 
-      <div className='flex justify-end my-6 '>
         <Button className='text-cyan-600' variant='outline'><FaRegEdit />
           Edit</Button>
-      </div>      <Modal.Backdrop>
+           <Modal.Backdrop>
         <Modal.Container placement="auto">
           <Modal.Dialog className="sm:max-w-md">
             <Modal.CloseTrigger />
