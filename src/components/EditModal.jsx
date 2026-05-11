@@ -40,7 +40,7 @@ export function EditModal() {
             <Modal.CloseTrigger />
             <Modal.Header>
              
-              <Modal.Heading>Update Information</Modal.Heading>
+              <Modal.Heading>Edit Destination</Modal.Heading>
 
             </Modal.Header>
             <Modal.Body className="p-6">
