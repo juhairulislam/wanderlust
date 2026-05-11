@@ -2,6 +2,7 @@
 
 import { Envelope } from "@gravity-ui/icons";
 import { Button, TextArea, FieldError, Input, Label, Modal, Surface, TextField, Select, ListBox } from "@heroui/react";
+import { redirect } from "next/navigation";
 import { FaRegEdit } from "react-icons/fa";
 
 export function EditModal({ destination }) {
@@ -35,6 +36,7 @@ export function EditModal({ destination }) {
     })
 
     const data = await res.json() 
+    redirect(`/destinations/${_id}`)
 
     // console.log(data)
   }
