@@ -4,7 +4,19 @@ import { Envelope } from "@gravity-ui/icons";
 import { Button, TextArea, FieldError, Input, Label, Modal, Surface, TextField, Select, ListBox } from "@heroui/react";
 import { FaRegEdit } from "react-icons/fa";
 
-export function EditModal() {
+export function EditModal({destination}) {
+
+    const {
+    _id,
+    destinationName,
+    country,
+    price,
+    imageUrl,
+    duration,
+    departureDate,
+    description,
+    category,
+  } = destination;
 
   const onSubmit = async (e) => {
     e.preventDefault();

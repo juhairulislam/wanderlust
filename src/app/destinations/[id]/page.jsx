@@ -34,7 +34,7 @@ const DetailsPage = async ({ params }) => {
     <div className="min-h-screen bg-[#faf9f6] font-sans">
 
       
-<EditModal></EditModal>
+<EditModal destination={destination}></EditModal>
       {/* ── Hero ── */}
       <div className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
         <Image
