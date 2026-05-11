@@ -2,10 +2,10 @@
 
 import {AlertDialog, Button} from "@heroui/react";
 
-export function Default() {
+export function DeleteDialog() {
   return (
     <AlertDialog>
-      <Button variant="danger">Delete Project</Button>
+      <Button variant="danger">Delete</Button>
       <AlertDialog.Backdrop>
         <AlertDialog.Container>
           <AlertDialog.Dialog className="sm:max-w-[400px]">

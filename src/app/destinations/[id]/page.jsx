@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Button } from '@heroui/react';
 import { FaRegEdit } from 'react-icons/fa';
 import { EditModal } from '@/components/EditModal';
+import { DeleteDialog } from '@/components/DeleteDialog';
 
 const DetailsPage = async ({ params }) => {
   const { id } = await params;
@@ -34,9 +35,14 @@ const DetailsPage = async ({ params }) => {
     <div className="min-h-screen bg-[#faf9f6] font-sans">
 
       
+      <div className='flex items-center justify-end gap-2'>
+
+<EditModal destination={destination}></EditModal>
+<DeleteDialog></DeleteDialog>
+
+      </div>
 
       
-<EditModal destination={destination}></EditModal>
       {/* ── Hero ── */}
       <div className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
         <Image
