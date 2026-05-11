@@ -130,7 +130,7 @@ export function EditModal({ destination }) {
                       <Label>Price (USD)</Label>
                       <Input
                         type="number"
-                        placeholder="1299"
+                        placeholder="1399"
                         className="rounded-2xl"
                       />
                       <FieldError />
