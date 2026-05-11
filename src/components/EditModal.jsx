@@ -39,10 +39,8 @@ export function EditModal() {
           <Modal.Dialog className="sm:max-w-md">
             <Modal.CloseTrigger />
             <Modal.Header>
-              <Modal.Icon className="bg-accent-soft text-accent-soft-foreground">
-                <Envelope className="size-5" />
-              </Modal.Icon>
-              <Modal.Heading>Contact Us</Modal.Heading>
+             
+              <Modal.Heading>Update Information</Modal.Heading>
 
             </Modal.Header>
             <Modal.Body className="p-6">
@@ -184,7 +182,7 @@ export function EditModal() {
               <Button slot="close" variant="secondary">
                 Cancel
               </Button>
-              <Button slot="close">Send Message</Button>
+              <Button className='bg-cyan-600 ' slot="close">Update</Button>
             </Modal.Footer>
           </Modal.Dialog>
         </Modal.Container>
