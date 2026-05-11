@@ -4,6 +4,24 @@ import {AlertDialog, Button} from "@heroui/react";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 export function DeleteDialog({destination}) {
+
+    const {_id , destinationName} = destination
+
+    const handleDelete =async() =>{
+
+        const res =await fetch(`http://localhost:5000/destination/${_id}`,{
+
+            method:"DELETE" ,
+            headers:{
+                "content-type":"application/json" ,
+            }
+        })
+const data = await res.json() ;
+redirect('/destinations')
+
+    }
+
+
   return (
     <AlertDialog>
       <Button className='text-red-500 border border-red-500' variant="outline"><RiDeleteBin6Line />
@@ -18,7 +36,7 @@ export function DeleteDialog({destination}) {
             </AlertDialog.Header>
             <AlertDialog.Body>
               <p>
-                This will permanently delete <strong>{destination.destinationName}</strong> and all of its
+                This will permanently delete <strong>{destinationName}</strong> and all of its
                 data. This action cannot be undone.
               </p>
             </AlertDialog.Body>
@@ -26,7 +44,7 @@ export function DeleteDialog({destination}) {
               <Button slot="close" variant="tertiary">
                 Cancel
               </Button>
-              <Button slot="close" variant="danger">
+              <Button onClick={handleDelete} slot="close" variant="danger">
                 Delete
               </Button>
             </AlertDialog.Footer>
