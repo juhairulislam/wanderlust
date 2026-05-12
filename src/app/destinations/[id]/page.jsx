@@ -35,7 +35,7 @@ const DetailsPage = async ({ params }) => {
     <div className="min-h-screen bg-[#faf9f6] font-sans">
 
       
-      <div className='flex items-center justify-end gap-2 my-5'>
+      <div className='flex items-center justify-end gap-2 my-6'>
 
 <EditModal destination={destination}></EditModal>
 <DeleteDialog destination={destination}></DeleteDialog>
