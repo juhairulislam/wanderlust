@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <nav className='flex justify-between items-center p-6 shadow'>
 
-            <ul className='flex justify-between items-center gap-4'>
+            <ul className='flex justify-between items-center gap-6'>
                 <li><Link href={'/'}>Home</Link></li>
                 <li><Link href={'/destinations'}>Destinations</Link></li>
                 <li><Link href={'/my-bookings'}>My Bookings</Link></li>
