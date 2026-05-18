@@ -7,7 +7,7 @@ const Footer = () => {
             Wanderlust
           </h1>
           <p className="mt-4 max-w-xl">
-            Your gateway to extraordinary travel experiences around the world.
+            Your gateway to extraordinary travel experiences around the world .
           </p>
         </div>
 
