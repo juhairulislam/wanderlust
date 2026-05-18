@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <h3 className="text-white mb-3 tracking-wide">NEWSLETTER</h3>
             <p className="mb-4 text-sm">
-              Subscribe for exclusive travel deals and inspiration.
+              Subscribe for exclusive travel deals and inspiration .
             </p>
 
             <div className="flex items-center bg-gray-800 px-4 py-3">
