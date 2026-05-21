@@ -45,7 +45,7 @@ export function EditModal({ destination }) {
   return (
     <Modal>
 
-        <Button className='text-cyan-600' variant='outline'><FaRegEdit />
+        <Button className='text-cyan-500' variant='outline'><FaRegEdit />
           Edit</Button>
            <Modal.Backdrop>
         <Modal.Container placement="auto">
