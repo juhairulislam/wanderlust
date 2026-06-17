@@ -80,7 +80,7 @@ export function EditModal({ destination }) {
                       <FieldError />
                     </TextField>
 
-                    {/* Category - Updated Select Component */}
+
                     <div>
                       <Select
                         defaultValue={category}
