@@ -43,7 +43,6 @@ const DetailsPage = async ({ params }) => {
       </div>
 
       
-      {/* ── Hero ── */}
       <div className="relative w-full h-[55vh] md:h-[70vh] overflow-hidden">
         <Image
           alt={destinationName}
