@@ -14,7 +14,6 @@ const DestinationCard = ({ d }) => {
 
             
 
-            {/* Image with rating badge */}
             <div className="relative w-full h-[200px] overflow-hidden">
                 <Image
                     alt={destinationName}
